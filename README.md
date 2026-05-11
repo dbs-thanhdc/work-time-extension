@@ -2,6 +2,8 @@
 
 > Tính nhanh ngày công và tổng giờ làm việc từ dữ liệu copy từ Excel.
 
+![Screenshot](screenshot.png)
+
 ---
 
 ## Tính năng
