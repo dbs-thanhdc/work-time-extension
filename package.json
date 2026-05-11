@@ -1,0 +1,15 @@
+{
+  "name": "work-time-extension",
+  "version": "1.0.0",
+  "description": "Chrome Extension tính ngày công từ clipboard",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "clean": "rm -f popup.js utils/calculator.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/chrome": "^0.0.270"
+  },
+  "license": "MIT"
+}

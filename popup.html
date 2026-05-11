@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Time Calculator</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__icon">⏱</div>
+    <div>
+      <div class="header__title">Work Time Calculator</div>
+      <div class="header__sub">Tính ngày công từ clipboard</div>
+    </div>
+  </header>
+
+  <!-- Status -->
+  <div id="status-banner" class="status-banner status-banner--neutral">
+    <span id="status-text">Đang khởi động…</span>
+  </div>
+
+  <!-- Body -->
+  <main class="body">
+
+    <!-- Textarea -->
+    <div class="textarea-wrap">
+      <label class="textarea-label" for="data-input">Dữ liệu giờ làm</label>
+      <textarea
+        id="data-input"
+        placeholder="Paste dữ liệu vào đây&#10;Ví dụ:&#10;08:30&#10;07:45&#10;08:20"
+        spellcheck="false"
+      ></textarea>
+      <p class="textarea-hint">Mỗi dòng một giá trị HH:mm — Ctrl+Enter để tính nhanh</p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-row">
+      <button id="btn-calc"  class="btn-primary">▶ Tính toán</button>
+      <button id="btn-paste" class="btn-ghost"   title="Dán từ clipboard">📋</button>
+      <button id="btn-clear" class="btn-ghost"   title="Xóa dữ liệu">🗑</button>
+    </div>
+
+    <!-- Result -->
+    <div id="result-card" class="result-card"></div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">Made for personal use</footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
